@@ -1264,7 +1264,8 @@ PAQUETES
 .cardsPaquetes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 80px;
 }
 
 .pk-card {
@@ -1503,6 +1504,7 @@ PAQUETES
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 2px;
+    padding: 15px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
     font-family: var(--font-family-p);
@@ -1511,7 +1513,7 @@ PAQUETES
 .sh-imgs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 50px;
 }
 
 .sh-img-card {
@@ -3114,7 +3116,9 @@ INDEX HISTORIA
     .menu-hamburguesa {
         display: flex;
     }
-
+    .barranavegacion{
+        width: 100%;
+    }
     .navMenu {
         position: fixed;
         top: 0;
@@ -3259,6 +3263,7 @@ INDEX HISTORIA
 
     .cr-detail-img {
         height: 260px;
+        width: 100%;
     }
 
     .cr-stats {
@@ -3280,10 +3285,77 @@ INDEX HISTORIA
         align-items: center;
     }
 
+
     .pk-card {
         width: 100%;
         max-width: 480px;
     }
+   
+
+     .sh-section {
+        padding: 60px 15px;
+    }
+
+    .sh-header {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .sh-header h2 {
+        font-size: 32px;
+    }
+
+    .sh-year-label {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .sh-year-num {
+        font-size: 34px;
+    }
+
+    .sh-year-badge {
+        font-size: 8px;
+        padding: 7px 10px;
+        letter-spacing: 1px;
+    }
+
+    .sh-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .sh-gender-block {
+        width: 100%;
+    }
+
+    .sh-gender-label {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .sh-imgs {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .sh-img-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .sh-img-card img {
+        padding: 5px;
+    }
+
+    .sh-img-card-label {
+        font-size: 11px;
+    }
+
+
+
+
 
     /* PREMIOS */
     .pr-tabs {
