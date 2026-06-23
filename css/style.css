@@ -3169,15 +3169,20 @@ INDEX HISTORIA
     /* HERO */
     h1 {
         font-size: 2.8rem;
+        text-align: center;
     }
 
     .conatinerHeader {
         gap: 16px;
     }
-
+    .texto-normal p{
+        text-align: center;
+    }
     .btn-he {
-        flex-direction: column;
-        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
         gap: 12px;
     }
 
@@ -3379,7 +3384,7 @@ INDEX HISTORIA
     }
 
     .pr-slide-img-wrap {
-        height: 240px;
+        height: 340px;
     }
 
     .pr-slide-body {
