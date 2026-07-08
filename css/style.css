@@ -243,7 +243,6 @@ HEADER
     color: var(--color-txt);
 }
 
-
 /* 
 ══════════════════════════════════════
 NOSOTROS
@@ -323,7 +322,7 @@ NOSOTROS
     margin-bottom: 14px;
 }
 
-.an-text p:last-of-type {
+.an-text p {
     margin-bottom: 28px;
 }
 
@@ -540,6 +539,12 @@ NOSOTROS
 
 .ew-autografo {
     width: 100%;
+    height: 100%;
+}
+
+.ew-autografo img {
+    height: 100%;
+    width: 100%;
 }
 
 .ew-sign-meta {
@@ -665,12 +670,10 @@ NOSOTROS
     object-fit: cover;
     display: block;
     transition: transform 0.4s;
-    filter: grayscale(10%)
 }
 
 .st-card:hover .st-card-img {
     transform: scale(1.04);
-    filter: grayscale(0%);
 }
 
 .st-card-body {
@@ -751,28 +754,19 @@ CICLISTAS
 /* GRID */
 .cy-grid {
     column-count: 3;
-    /* Espacio de separación horizontal entre columnas */
     column-gap: 24px;
     width: 100%;
 }
-
-
 
 /* CARD */
 .cy-card {
     position: relative;
     width: 100%;
     margin-bottom: 24px;
-    /* Espacio vertical entre tarjetas */
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
-    /* Evita comportamientos extraños en columnas */
-
-    /* CRUCIAL: Evita que una tarjeta se divida a la mitad entre dos columnas */
     break-inside: avoid;
-
-    /* Altura por defecto para las tarjetas normales (como la 2 y la 4) */
     height: 320px;
 }
 
@@ -781,7 +775,6 @@ CICLISTAS
 .card-5,
 .card-6 {
     height: 500px;
-    /* Tus tarjetas altas */
 }
 
 .card-7 {
@@ -790,7 +783,6 @@ CICLISTAS
 
 .card-8 {
     height: 420px;
-    /* Tus tarjetas altas */
 }
 
 .card-9 {
@@ -804,13 +796,11 @@ CICLISTAS
     display: block;
     object-fit: cover;
     object-position: top;
-    transition: transform 0.5s ease, filter 0.4s ease;
-    filter: grayscale(25%);
+    transition: transform 0.5s ease 0.4s ease;
 }
 
 .cy-card:hover img {
     transform: scale(1.06);
-    filter: grayscale(0%);
 }
 
 .cy-overlay {
@@ -2103,35 +2093,6 @@ PAQUETES
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ══════════════════════════════════════
    PAQUETE DETALLE — PÁGINAS INDIVIDUALES
 ══════════════════════════════════════ */
@@ -2424,14 +2385,6 @@ PAQUETES
 }
 
 
-
-
-
-
-
-
-
-
 /*
 INDEX HISTORIA
 */
@@ -2490,6 +2443,18 @@ INDEX HISTORIA
     text-align: center;
 }
 
+.container-header-historia .Boton-header2 {
+    width: 200px;
+    margin: 40px auto 0;
+
+}
+
+.container-header-historia .Boton-header2 a {
+    color: var(--color-txt);
+    font-family: var(--font-family-p);
+    font-size: 16px;
+}
+
 .subtitulo-header {
     color: var(--color-botones-2);
     font-family: var(--h1--tipo-letra);
@@ -2531,7 +2496,7 @@ INDEX HISTORIA
     font-weight: 500;
     color: #ffffff;
     line-height: 1.1;
-    margin-bottom: 20px;
+    padding: 20px 0;
     letter-spacing: -0.5px;
 }
 
@@ -2652,7 +2617,7 @@ INDEX HISTORIA
     font-weight: 500;
     color: var(--color-txt);
     line-height: 1.15;
-    margin-bottom: 18px;
+    margin: 18px 0;
 }
 
 .rb-proposito-text p {
@@ -2672,12 +2637,14 @@ INDEX HISTORIA
 .rb-pill {
     font-size: 12px;
     font-weight: 500;
-    padding: 6px 14px;
-    border-radius: 20px;
-    background: var(--color-botones-2);
-    color: #1D4ED8;
+    padding: 10px 26px;
+    border-radius: 8px;
+    background-color: var(--color-nav);
+    backdrop-filter: blur(28px);
+    color: var(--color-txt);
     font-family: var(--font-family-p);
-    border: 1px solid #BFDBFE;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.511)
 }
 
 .seccion-encargados {
@@ -2889,9 +2856,472 @@ INDEX HISTORIA
     transform: translateY(-7px) rotate(-45deg);
 }
 
+/*Inscripciones*/
+/* ---------------- INSCRIPCIÓN ---------------- */
+.headerInscripciones {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/inscripcionesbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navInscripcioens {
+    justify-content: space-evenly;
+}
+
+.informacionInscrio {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.informacionInscrio h1 {
+    text-align: center;
+    color: var(--color-txt);
+}
+
+.informacionInscrio span {
+    color: var(--color-boton-menu);
+    font-size: var(--font-size-h1);
+}
+
+.informacionInscrio p {
+    padding: 35px 0;
+    font-family: var(--font-family-p);
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-txt);
+}
+
+.inscripcion {
+    padding: 96px 0 112px;
+    background:
+        radial-gradient(circle at 85% 8%, rgba(57, 72, 235, 0.16), transparent 45%),
+        var(--first-color);
+    border-bottom: 1px solid var(--line);
+}
+
+.insc-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.eyebrow {
+    font-family: var(--font-family-p);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: var(--color-accent);
+}
+
+.insc-left h1 {
+    font-family: var(--h1--tipo-letra);
+    font-weight: 400;
+    font-size: clamp(2.2rem, 4.4vw, var(--font-size-h1));
+    line-height: 1.12;
+    margin: 0 0 24px;
+    letter-spacing: -0.01em;
+    color: var(--color-txt);
+}
+
+.insc-left h1 span {
+    color: var(--color-accent);
+    font-family: var(--h1--tipo-letra);
+    font-size: var(--font-size-h1);
+}
+
+.insc-left p.lead {
+    font-family: var(--font-family-p);
+    font-size: calc(var(--font-size-p));
+    line-height: 1.65;
+    color: var(--color-hover-2);
+    max-width: 500px;
+    margin: 0 0 36px;
+}
+
+.detalles {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0;
+    border-top: 1px solid var(--line);
+    max-width: 460px;
+}
+
+.detalle {
+    padding: 16px 18px 16px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.detalle+.detalle {
+    border-left: 1px solid var(--line);
+    padding-left: 18px;
+}
+
+.detalle .num {
+    font-family: var(--h2-tipo-letra);
+    font-size: 20px;
+    color: var(--color-accent);
+    display: block;
+}
+
+.detalle .lbl {
+    font-family: var(--font-family-p);
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: rgba(241, 245, 249, 0.55);
+    margin-top: 6px;
+    display: block;
+}
+
+.reglas {
+    list-style: none;
+    margin: 36px 0 0;
+    padding: 0;
+    max-width: 500px;
+}
+
+.reglas li {
+    position: relative;
+    padding-left: 20px;
+    font-family: var(--font-family-p);
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(241, 245, 249, 0.68);
+    margin-bottom: 10px;
+}
+
+.reglas li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--color-boton-menu);
+}
+
+/* Ticket / bib card */
+.ticket {
+    position: relative;
+    background: var(--color-nav);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    padding: 38px 34px 34px;
+}
+
+.ticket::before,
+.ticket::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: var(--first-color);
+    border: 1px solid var(--line-strong);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ticket::before {
+    left: -13px;
+}
+
+.ticket::after {
+    right: -13px;
+}
+
+.ticket-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px dashed var(--line-strong);
+    padding-bottom: 20px;
+    margin-bottom: 26px;
+}
+
+.ticket-top .bib {
+    font-family: var(--font-family-p);
+    font-size: 12px;
+    color: rgba(241, 245, 249, 0.5);
+    letter-spacing: .08em;
+}
+
+.ticket-top .bib strong {
+    display: block;
+    font-family: var(--h2-tipo-letra);
+    font-size: 18px;
+    color: var(--color-txt);
+    margin-top: 4px;
+}
+
+.estado {
+    font-family: var(--font-family-p);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--color-txt-dark);
+    background: var(--color-accent);
+    padding: 5px 10px;
+    border-radius: 999px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    font-family: var(--font-family-p);
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: rgba(241, 245, 249, 0.55);
+}
+
+.campo input,
+.campo select {
+    background: var(--first-color);
+    border: 1px solid var(--line-strong);
+    border-radius: calc(var(--radius) - 2px);
+    color: var(--color-txt);
+    font-family: var(--font-family-p);
+    font-size: 14.5px;
+    padding: 12px 13px;
+    outline: none;
+    transition: border-color .15s ease, background .15s ease;
+}
+
+.campo input::placeholder {
+    color: rgba(241, 245, 249, 0.32);
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: var(--color-accent);
+    background: #0A0F1C;
+}
+
+.campo input:focus-visible,
+.campo select:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.cat-select {
+    position: relative;
+}
+
+.cat-select select {
+    width: 100%;
+    appearance: none;
+    cursor: pointer;
+}
+
+.cat-select::after {
+    content: "▾";
+    position: absolute;
+    right: 14px;
+    top: 38px;
+    color: var(--color-accent);
+    pointer-events: none;
+    font-size: 12px;
+}
+
+.submit {
+    margin-top: 8px;
+    background: var(--color-boton-menu);
+    color: var(--color-txt);
+    border: none;
+    border-radius: calc(var(--radius) - 2px);
+    font-family: var(--font-family-p);
+    font-weight: 700;
+    font-size: 13.5px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background .15s ease, transform .12s ease, box-shadow .12s ease;
+}
+
+.submit:hover {
+    background: var(--color-hover-menu);
+    box-shadow: 0 6px 22px rgba(37, 99, 235, 0.35);
+}
+
+.submit:active {
+    transform: translateY(1px);
+}
+
+.submit:focus-visible {
+    outline: 2px solid var(--color-highlight);
+    outline-offset: 3px;
+}
+
+.fineprint {
+    font-family: var(--font-family-p);
+    font-size: 11.5px;
+    color: rgba(241, 245, 249, 0.42);
+    line-height: 1.5;
+    margin-top: 2px;
+}
+
+.inscribtn {
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+/*Footer*/
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: var(--first-color);
+    font-family: var(--font-family-p);
+}
+
+.foot-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.foot-brand .mark {
+    font-family: var(--h2-tipo-letra);
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--color-txt);
+}
+
+.foot-brand .mark span {
+    color: var(--color-accent);
+}
+
+.foot-brand p {
+    font-family: var(--font-family-p);
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: rgba(241, 245, 249, 0.55);
+    max-width: 32ch;
+    margin: 14px 0 0;
+}
+
+.foot-col h4 {
+    font-family: var(--font-family-p);
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: rgba(241, 245, 249, 0.45);
+    margin: 0 0 16px;
+}
+
+.foot-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.foot-col a {
+    color: rgba(241, 245, 249, 0.78);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color .12s ease;
+}
+
+.foot-col a:hover {
+    color: var(--color-accent);
+}
+
+.foot-col a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.foot-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 25px 0;
+    gap: 14px;
+}
+
+.foot-bottom p {
+    margin: 0;
+    font-family: var(--font-family-p);
+    font-size: 11.5px;
+    color: rgba(241, 245, 249, 0.4);
+}
+
+.foot-social {
+    display: flex;
+    gap: 16px;
+}
+
+.foot-social a {
+    color: rgba(241, 245, 249, 0.55);
+    text-decoration: none;
+    font-family: var(--font-family-p);
+    font-weight: 700;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    border-bottom: 1px solid transparent;
+    transition: border-color .12s ease, color .12s ease;
+}
+
+.foot-social a:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
 /* ══════════════════════════════════════
    DESKTOP PEQUEÑO — max 1024px
 ══════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+    .submit {
+        transition: none;
+    }
+}
+
 @media (max-width: 1024px) {
     .container {
         width: 90%;
@@ -3105,6 +3535,28 @@ INDEX HISTORIA
     .cr-stats {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .insc-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .row2 {
+        grid-template-columns: 1fr;
+    }
+
+    .detalles {
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+
+    .detalle:nth-child(3) {
+        border-left: none;
+        border-top: 1px solid var(--line);
+        padding-left: 0;
+        padding-top: 16px;
+        grid-column: 1 / -1;
+    }
 }
 
 /* ══════════════════════════════════════
@@ -3116,9 +3568,11 @@ INDEX HISTORIA
     .menu-hamburguesa {
         display: flex;
     }
-    .barranavegacion{
+
+    .barranavegacion {
         width: 100%;
     }
+
     .navMenu {
         position: fixed;
         top: 0;
@@ -3175,9 +3629,11 @@ INDEX HISTORIA
     .conatinerHeader {
         gap: 16px;
     }
-    .texto-normal p{
+
+    .texto-normal p {
         text-align: center;
     }
+
     .btn-he {
         display: flex;
         flex-wrap: wrap;
@@ -3295,9 +3751,9 @@ INDEX HISTORIA
         width: 100%;
         max-width: 480px;
     }
-   
 
-     .sh-section {
+
+    .sh-section {
         padding: 60px 15px;
     }
 
@@ -3522,6 +3978,19 @@ INDEX HISTORIA
 
     .subtitulo-header {
         font-size: 1.8rem;
+    }
+      .foot-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 24px;
+    }
+
+    .foot-brand {
+        grid-column: 1 / -1;
+    }
+
+    .foot-bottom {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
