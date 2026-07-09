@@ -10,30 +10,26 @@
 </head>
 
 <body>
-
-    <!-- NAVBAR igual al resto del sitio -->
-    <div class="barranavegacion">
-        <nav>
-            <div class="logo">
-                <img class="logo-img" src="img/logo.png" alt="">
-            </div>
-            <div class="menu-hamburguesa">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="navMenu">
-                <ul class="nav-list">
-                    <li class="nav-link"><a class="texto-menu" href="index.html">Inicio</a></li>
-                    <li class="nav-link"><a class="texto-menu" href="index.html#anclapaquetes">Paquetes</a></li>
-                    <li><a class="btn-menu" href="Inscripcion.html">Inscribirse</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <main class="pd-wrap">
-
+    <header>
+        <div class="barranavegacion">
+            <nav>
+                <div class="logo">
+                    <img class="logo-img" src="img/logo.png" alt="">
+                </div>
+                <div class="menu-hamburguesa">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-link"><a class="texto-menu" href="#">Inicio</a></li>
+                        <li class="nav-link"><a class="texto-menu" href="#paque">Detalles</a></li>
+                        <li><a class="btn-menu" href="Inscripcion.html">Inscribirse</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <!-- HERO -->
         <div class="pd-hero">
             <div class="pd-hero-bg" style="background-image: url('img/fondopaq1.jpg');"></div>
@@ -49,6 +45,15 @@
                 </div>
             </div>
         </div>
+    </header>
+
+    <a href="index.html" class="botonRegresar">
+        <i class="bx bx-arrow-back"></i>
+        Regresar
+    </a>
+    <main class="pd-wrap">
+
+
 
         <div class="pd-body">
 
@@ -60,7 +65,7 @@
                         Asegura tu lugar en La Zona de Los Santos con todo lo que necesitas para vivir la
                         experiencia completa: transporte, hospedaje, gastronomía y atención médica.</p>
                 </div>
-                <div class="pd-features">
+                <div class="pd-features" id="paque">
                     <div class="pd-feature">
                         <span class="pd-feature-dot"></span>
                         <span class="pd-feature-text">Inscripción a la competencia</span>
@@ -128,7 +133,7 @@
 
         </div>
     </main>
-     <footer>
+    <footer>
         <div class="wrap foot-grid">
 
             <div class="foot-brand">
@@ -136,12 +141,10 @@
             </div>
 
             <div class="foot-col">
+                <h4>Navegación</h4>
                 <ul>
-                    <li><a href="#anclanosotros">Nosotros</a></li>
-                    <li><a href="#anclacircuitos">Circuitos</a></li>
-                    <li><a href="#anclapaquetes">Paquetes</a></li>
-                    <li><a href="#anclapremiacion">Premios</a></li>
-                    <li><a href="#anclacontacto">Contacto</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#paque">Detalles</a></li>
                     <li><a href="Inscripcion.html">Inscribirse</a></li>
                 </ul>
             </div>
@@ -175,7 +178,7 @@
             </div>
         </div>
     </footer>
-<div class="nav-overlay"></div>
+    <div class="nav-overlay"></div>
 </body>
 
 </html>
