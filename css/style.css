@@ -2103,7 +2103,7 @@ PAQUETES
 /* HERO */
 .pd-hero {
     position: relative;
-    height: 520px;
+    height: 630px;
     display: flex;
     align-items: top;
     overflow: hidden;
@@ -2860,7 +2860,7 @@ INDEX HISTORIA
 /* ---------------- INSCRIPCIÓN ---------------- */
 .headerInscripciones {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: url(../img/inscripcionesbanner.jpg);
     background-position: center;
     background-size: cover;
@@ -3312,6 +3312,134 @@ footer {
     color: var(--color-accent);
     border-color: var(--color-accent);
 }
+
+/* ══════════════════════════════════════
+  GaLERIA
+══════════════════════════════════════ */
+.headerGaleria{
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    background: url(../img/fondogaleria.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galeria {
+    columns: 4 250px;
+    column-gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foto {
+    margin-bottom: 15px;
+    break-inside: avoid;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.foto img {
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+.encabezado {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.encabezado h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+/* ---------------- LIGHTBOX ---------------- */
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.lightbox.abierto {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 85%;
+    max-height: 85vh;
+    border-radius: 10px;
+}
+
+/* Botones */
+
+.cerrar,
+.anterior,
+.siguiente {
+    position: absolute;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.cerrar {
+    top: 20px;
+    right: 30px;
+}
+
+.anterior {
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.siguiente {
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cerrar:hover,
+.anterior:hover,
+.siguiente:hover {
+    color: #d4af37;
+}
+
+.galeriaSec{
+    background-color: var(--first-color);
+    padding: 50px 0;
+}
+
+
+
+
 
 /* ══════════════════════════════════════
    DESKTOP PEQUEÑO — max 1024px
@@ -3979,7 +4107,8 @@ footer {
     .subtitulo-header {
         font-size: 1.8rem;
     }
-      .foot-grid {
+
+    .foot-grid {
         grid-template-columns: 1fr 1fr;
         gap: 32px 24px;
     }
