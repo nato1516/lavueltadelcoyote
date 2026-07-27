@@ -34,9 +34,9 @@ p {
 }
 
 :root {
-    --first-color: #050303;
+    --first-color: #080C14;
 
-    --color-nav: rgba(18, 28, 54, 0.523);
+    --color-nav: rgba(12, 18, 35, 0.6);
 
     --h1--tipo-letra: "Zen Dots", sans-serif;
     --h2-tipo-letra: "Zen Dots", sans-serif;
@@ -46,16 +46,20 @@ p {
     --font-size-p: 1.5rem;
     --font-size: 1.5rem;
 
-    --color-boton-menu: #2563EB;
-    --color-hover-menu: #3B82F6;
+    /* Azul principal — más suave, menos eléctrico */
+    --color-boton-menu: #5B8DEF;
+    --color-hover-menu: #7AAAF5;
 
-    --color-botones-2: #E5E7EB;
-    --color-hover-2: #CBD5E1;
+    /* Botones secundarios — gris azulado suave */
+    --color-botones-2: #D6E4FF;
+    --color-hover-2: #A8C4F0;
 
-    --color-txt: #F1F5F9;
-    --color-txt-dark: #0A0F1C;
+    /* Textos */
+    --color-txt: #E8EEF8;
+    --color-txt-dark: #080C14;
 
-    --color-accent: #3948eb;
+    /* Acento — azul bebé */
+    --color-accent: #93BBF7;
     --color-highlight: #FFFFFF;
 }
 
