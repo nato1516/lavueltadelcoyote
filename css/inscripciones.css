@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Zen+Dots&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style: none;
+}
+
+h2 {
+    font-family: var(--h2-tipo-letra);
+    font-size: 38px;
+}
+
+h1 {
+    font-family: var(--h1--tipo-letra);
+    font-size: var(--font-size-h1);
+    color: var(--color-boton-menu);
+    line-height: 1.1;
+}
+
+p {
+    font-family: var(--font-family-p);
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+:root {
+    --first-color: #080C14;
+
+    --color-nav: rgba(12, 18, 35, 0.6);
+
+    --h1--tipo-letra: "Zen Dots", sans-serif;
+    --h2-tipo-letra: "Zen Dots", sans-serif;
+    --font-family-p: "Roboto", sans-serif;
+
+    --font-size-h1: 5rem;
+      --font-size-h2: 4rem;
+    --font-size-p: 1.5rem;
+    --font-size: 1.5rem;
+
+    /* Azul principal — más suave, menos eléctrico */
+    --color-boton-menu: #5B8DEF;
+    --color-hover-menu: #7AAAF5;
+
+    /* Botones secundarios — gris azulado suave */
+    --color-botones-2: #D6E4FF;
+    --color-hover-2: #A8C4F0;
+
+    /* Textos */
+    --color-txt: #E8EEF8;
+    --color-txt-dark: #080C14;
+
+    /* Acento — azul bebé */
+    --color-accent: #93BBF7;
+    --color-highlight: #FFFFFF;
+}
+.botonRegresar {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 12px 16px;
+    border-radius: 25px;
+
+    background-color: var(--color-boton-menu);
+    color: #fff;
+    text-decoration: none;
+
+    font-family: var(--font-family-p);
+    font-size: 14px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+
+    transition: 0.3s ease;
+}
+
+.botonRegresar:hover {
+    transform: translateY(-3px);
+}
+
+/*Inscripciones*/
+/* ---------------- INSCRIPCIÓN ---------------- */
+.headerInscripciones {
+    width: 100%;
+    height: 90vh;
+    background: url(../img/inscripcionesbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navInscripcioens {
+    justify-content: space-evenly;
+}
+
+.informacionInscrio {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.informacionInscrio h1 {
+    text-align: center;
+    color: var(--color-txt);
+     font-size: var(--font-size-h1);
+}
+
+.informacionInscrio span {
+    color: var(--color-boton-menu);
+    font-size: var(--font-size-h1);
+}
+.insc-left h2 {
+    color: var(--color-boton-menu);
+    font-size: var(--font-size-h2);
+}
+.insc-left .vuelta {
+    color: var(--color-txt);
+    font-size: var(--font-size-h2);
+}
+.informacionInscrio p {
+    padding: 35px 0;
+    font-family: var(--font-family-p);
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-txt);
+}
+
+.inscripcion {
+    padding: 96px 0 112px;
+    background:
+        radial-gradient(circle at 85% 8%, rgba(57, 72, 235, 0.16), transparent 45%),
+        var(--first-color);
+    border-bottom: 1px solid var(--line);
+}
+
+.insc-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.eyebrow {
+    font-family: var(--font-family-p);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: var(--color-accent);
+}
+
+.insc-left h1 {
+    font-family: var(--h1--tipo-letra);
+    font-weight: 400;
+    font-size: clamp(2.2rem, 4.4vw, var(--font-size-h1));
+    line-height: 1.12;
+    margin: 0 0 24px;
+    letter-spacing: -0.01em;
+    color: var(--color-txt);
+}
+
+.insc-left h1 span {
+    color: var(--color-accent);
+    font-family: var(--h1--tipo-letra);
+    font-size: var(--font-size-h1);
+}
+
+.insc-left p.lead {
+    font-family: var(--font-family-p);
+    font-size: calc(var(--font-size-p));
+    line-height: 1.65;
+    color: var(--color-hover-2);
+    max-width: 500px;
+    margin: 0 0 36px;
+}
+
+.detalles {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0;
+    border-top: 1px solid var(--line);
+    max-width: 460px;
+}
+
+.detalle {
+    padding: 16px 18px 16px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.detalle+.detalle {
+    border-left: 1px solid var(--line);
+    padding-left: 18px;
+}
+
+.detalle .num {
+    font-family: var(--h2-tipo-letra);
+    font-size: 20px;
+    color: var(--color-accent);
+    display: block;
+}
+
+.detalle .lbl {
+    font-family: var(--font-family-p);
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: rgba(241, 245, 249, 0.55);
+    margin-top: 6px;
+    display: block;
+}
+
+.reglas {
+    list-style: none;
+    margin: 36px 0 0;
+    padding: 0;
+    max-width: 500px;
+}
+
+.reglas li {
+    position: relative;
+    padding-left: 20px;
+    font-family: var(--font-family-p);
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(241, 245, 249, 0.68);
+    margin-bottom: 10px;
+}
+
+.reglas li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--color-boton-menu);
+}
+
+/* Ticket / bib card */
+.ticket {
+    position: relative;
+    background: var(--color-nav);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    padding: 38px 34px 34px;
+}
+
+.ticket::before,
+.ticket::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: var(--first-color);
+    border: 1px solid var(--line-strong);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ticket::before {
+    left: -13px;
+}
+
+.ticket::after {
+    right: -13px;
+}
+
+.ticket-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px dashed var(--line-strong);
+    padding-bottom: 20px;
+    margin-bottom: 26px;
+}
+
+.ticket-top .bib {
+    font-family: var(--font-family-p);
+    font-size: 12px;
+    color: rgba(241, 245, 249, 0.5);
+    letter-spacing: .08em;
+}
+
+.ticket-top .bib strong {
+    display: block;
+    font-family: var(--h2-tipo-letra);
+    font-size: 18px;
+    color: var(--color-txt);
+    margin-top: 4px;
+}
+
+.estado {
+    font-family: var(--font-family-p);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--color-txt-dark);
+    background: var(--color-accent);
+    padding: 5px 10px;
+    border-radius: 999px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    font-family: var(--font-family-p);
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: rgba(241, 245, 249, 0.55);
+}
+
+.campo input,
+.campo select {
+    background: var(--first-color);
+    border: 1px solid var(--line-strong);
+    border-radius: calc(var(--radius) - 2px);
+    color: var(--color-txt);
+    font-family: var(--font-family-p);
+    font-size: 14.5px;
+    padding: 12px 13px;
+    outline: none;
+    transition: border-color .15s ease, background .15s ease;
+}
+
+.campo input::placeholder {
+    color: rgba(241, 245, 249, 0.32);
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: var(--color-accent);
+    background: #0A0F1C;
+}
+
+.campo input:focus-visible,
+.campo select:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.cat-select {
+    position: relative;
+}
+
+.cat-select select {
+    width: 100%;
+    appearance: none;
+    cursor: pointer;
+}
+
+.cat-select::after {
+    content: "▾";
+    position: absolute;
+    right: 14px;
+    top: 38px;
+    color: var(--color-accent);
+    pointer-events: none;
+    font-size: 12px;
+}
+
+.submit {
+    margin-top: 8px;
+    background: var(--color-boton-menu);
+    color: var(--color-txt);
+    border: none;
+    border-radius: calc(var(--radius) - 2px);
+    font-family: var(--font-family-p);
+    font-weight: 700;
+    font-size: 13.5px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background .15s ease, transform .12s ease, box-shadow .12s ease;
+}
+
+.submit:hover {
+    background: var(--color-hover-menu);
+    box-shadow: 0 6px 22px rgba(37, 99, 235, 0.35);
+}
+
+.submit:active {
+    transform: translateY(1px);
+}
+
+.submit:focus-visible {
+    outline: 2px solid var(--color-highlight);
+    outline-offset: 3px;
+}
+
+.fineprint {
+    font-family: var(--font-family-p);
+    font-size: 11.5px;
+    color: rgba(241, 245, 249, 0.42);
+    line-height: 1.5;
+    margin-top: 2px;
+}
+
+.inscribtn {
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+/* ==========================================
+   TABLETS (1024px)
+========================================== */
+@media (max-width: 1024px) {
+
+    .insc-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .eyebrow{
+        margin: 0 auto;
+        text-align: center;
+        width: 300px;
+    }
+}
+
+/* ==========================================
+   TABLETS PEQUEÑAS (768px)
+========================================== */
+@media (max-width:768px) {
+
+    .header-historia {
+        height: 80vh;
+    }
+
+    .container-header-historia {
+        width: 90%;
+    }
+
+    .container-header-historia .Boton-header2 {
+        width: 180px;
+    }
+
+    .rb-historia {
+        min-height: auto;
+        padding: 70px 0;
+    }
+
+    .rb-historia-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .rb-historia-content p {
+        max-width: 100%;
+    }
+
+    .rb-stat-col {
+        width: 100%;
+    }
+
+    .rb-proposito {
+        padding: 60px 0;
+    }
+
+    .rb-proposito-text h2 {
+        font-size: 28px;
+    }
+
+    .rb-proposito-text p {
+        text-align: center;
+    }
+
+    .cm-grid {
+        gap: 30px;
+    }
+
+    .cm-card {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .botonRegresar {
+        bottom: 15px;
+        left: 15px;
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+    .container-header-historia .subtitulo-header{
+        font-size: 33px;
+    }
+    .container-header-historia h1{
+        font-size: 33px;
+    }
+
+}
+
+/* ==========================================
+   CELULARES (480px)
+========================================== */
+@media (max-width:480px) {
+
+    .container-header-historia {
+        width: 92%;
+        padding-bottom: 40px;
+    }
+
+    .subtitulo-header {
+        font-size: 36px;
+    }
+
+    .container-header-historia .p {
+        font-size: 14px;
+    }
+
+    .container-header-historia .Boton-header2 {
+        width: 170px;
+    }
+
+    .rb-historia-content {
+        width: 92%;
+        padding: 40px 0;
+    }
+
+    .rb-historia-content h2,
+    .rb-historia-content h2 em {
+        font-size: 20px;
+    }
+    .seccion-encargados .section-title{
+        font-size: 20px;
+    }
+    .rb-historia-content p {
+        font-size: 14px;
+    }
+
+    .rb-stat {
+        padding: 12px 16px;
+    }
+
+    .rb-stat-num {
+        font-size: 22px;
+    }
+
+    .rb-stat-label {
+        font-size: 11px;
+    }
+
+    .rb-proposito {
+        padding: 50px 0;
+    }
+
+    .rb-proposito-text h2 {
+        font-size: 20px;
+    }
+
+    .rb-proposito-text p {
+        font-size: 14px;
+    }
+
+    .rb-pill {
+        width: 100%;
+        text-align: center;
+    }
+
+    .seccion-encargados {
+        padding: 50px 0;
+    }
+
+    .seccion-encargados h2 {
+        padding-bottom: 40px;
+    }
+
+    .cm-card {
+        height: 320px;
+    }
+
+    .cm-name {
+        font-size: 18px;
+    }
+
+    .cm-role {
+        font-size: 10px;
+    }
+
+    .cm-desc {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .botonRegresar {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+    .container-header-historia .subtitulo-header{
+        font-size: 25px;
+    }
+    .container-header-historia h1{
+        font-size: 25px;
+    }
+
+}
