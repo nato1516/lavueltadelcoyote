@@ -43,6 +43,7 @@ p {
     --font-family-p: "Roboto", sans-serif;
 
     --font-size-h1: 5rem;
+      --font-size-h2: 4rem;
     --font-size-p: 1.5rem;
     --font-size: 1.5rem;
 
@@ -1428,7 +1429,7 @@ PAQUETES
    CAMISAS OFICIALES
 ══════════════════════════════════════ */
 .sh-section {
-    background: #000;
+    background: var(--first-color);
     padding: 80px 0;
 }
 
@@ -1955,7 +1956,7 @@ PAQUETES
    CONTACTO
 ══════════════════════════════════════ */
 .ct-section {
-    background: #000;
+    background: var(--first-color);
     padding: 80px 0;
 }
 
@@ -2101,7 +2102,7 @@ PAQUETES
    PAQUETE DETALLE — PÁGINAS INDIVIDUALES
 ══════════════════════════════════════ */
 .pd-wrap {
-    background: #000;
+    background: var(--first-color);
 }
 
 /* HERO */
@@ -2388,444 +2389,6 @@ PAQUETES
     transform: translateY(-2px);
 }
 
-
-/*
-INDEX HISTORIA
-*/
-.botonRegresar {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-
-    display: flex;
-    align-items: center;
-    gap: 6px;
-
-    padding: 12px 16px;
-    border-radius: 25px;
-
-    background-color: var(--color-boton-menu);
-    color: #fff;
-    text-decoration: none;
-
-    font-family: var(--font-family-p);
-    font-size: 14px;
-
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    z-index: 1000;
-
-    transition: 0.3s ease;
-}
-
-.botonRegresar:hover {
-    transform: translateY(-3px);
-}
-
-.header-historia {
-    background:
-        linear-gradient(to top,
-            rgba(0, 0, 0, 0.589) 0%,
-            rgba(0, 0, 0, 0.138) 45%,
-            rgba(0, 0, 0, 0.1) 100%),
-        url(../img/fondoHistoria.jpg);
-
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container-header-historia {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    height: 100%;
-    margin: 0 auto;
-    width: 85%;
-    padding-bottom: 70px;
-    text-align: center;
-}
-
-.container-header-historia .Boton-header2 {
-    width: 200px;
-    margin: 40px auto 0;
-
-}
-
-.container-header-historia .Boton-header2 a {
-    color: var(--color-txt);
-    font-family: var(--font-family-p);
-    font-size: 16px;
-}
-
-.subtitulo-header {
-    color: var(--color-botones-2);
-    font-family: var(--h1--tipo-letra);
-    font-size: var(--font-size-h1);
-}
-
-.container-header-historia .p {
-    padding-top: 20px;
-}
-
-/* =========================================================
-   EQUIPO — CARDS CON REVEAL
-========================================================= */
-/* ══════════════════════════════════════
-   HISTORIA
-══════════════════════════════════════ */
-.rb-historia {
-    position: relative;
-    min-height: 520px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background: var(--first-color);
-}
-
-.rb-historia-content {
-    position: relative;
-    width: 85%;
-    margin: 0 auto;
-    padding: 60px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.rb-historia-content h2 {
-    font-size: 38px;
-    font-weight: 500;
-    color: #ffffff;
-    line-height: 1.1;
-    padding: 20px 0;
-    letter-spacing: -0.5px;
-}
-
-.rb-historia-content h2 em {
-    font-style: normal;
-    color: var(--color-boton-menu);
-    font-family: var(--h1--tipo-letra);
-    font-size: 38px;
-}
-
-.rb-historia-content p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: var(--color-hover-2);
-    max-width: 450px;
-    font-family: var(--font-family-p);
-}
-
-/* estadísticas */
-.rb-stat-col {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.rb-stat {
-    border-left: 4px solid var(--color-boton-menu);
-    padding: 14px 20px;
-    background: rgba(255, 255, 255, 0.04);
-    border-radius: 0 8px 8px 0;
-}
-
-.rb-stat-num {
-    font-size: 26px;
-    font-weight: 500;
-    color: var(--color-boton-menu);
-    line-height: 1;
-    margin-bottom: 4px;
-    font-family: var(--h2-tipo-letra);
-}
-
-.rb-stat-label {
-    font-size: 12px;
-    color: var(--color-txt);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: var(--font-family-p);
-}
-
-/* ══════════════════════════════════════
-   TAG COMPARTIDO
-══════════════════════════════════════ */
-.rb-tag {
-    display: inline-flex;
-    justify-content: center;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--color-boton-menu);
-    border-left: 3px solid var(--color-boton-menu);
-    font-family: var(--font-family-p);
-    padding-left: 10px;
-    margin: 0 auto;
-}
-
-/* ══════════════════════════════════════
-   PROPÓSITO
-══════════════════════════════════════ */
-.rb-proposito {
-    background: var(--first-color);
-    padding: 70px 0;
-}
-
-.rb-proposito-inner {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 50px;
-    align-items: center;
-}
-
-.rb-img-block {
-    position: relative;
-}
-
-.rb-img-block img {
-    width: 90%;
-    border-radius: 12px;
-    display: block;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-}
-
-.rb-img-badge {
-    position: absolute;
-    bottom: -16px;
-    right: -16px;
-    background: var(--color-boton-menu);
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-family: var(--font-family-p);
-}
-
-.rb-proposito-text .rb-tag {
-    color: var(--color-boton-menu);
-    border-color: var(--color-boton-menu);
-    font-family: var(--font-family-p);
-}
-
-.rb-proposito-text h2 {
-    font-size: 34px;
-    font-weight: 500;
-    color: var(--color-txt);
-    line-height: 1.15;
-    margin: 18px 0;
-}
-
-.rb-proposito-text p {
-    font-size: 15px;
-    line-height: 1.75;
-    color: var(--color-hover-2);
-    font-family: var(--font-family-p);
-}
-
-.rb-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 24px;
-}
-
-.rb-pill {
-    font-size: 12px;
-    font-weight: 500;
-    padding: 10px 26px;
-    border-radius: 8px;
-    background-color: var(--color-nav);
-    backdrop-filter: blur(28px);
-    color: var(--color-txt);
-    font-family: var(--font-family-p);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.511)
-}
-
-.seccion-encargados {
-    padding: 60px 0;
-    background-color: var(--first-color);
-}
-
-.seccion-encargados h2 {
-    color: var(--color-txt);
-    text-align: center;
-    padding-bottom: 60px;
-}
-
-.cm-grid {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40px 20px;
-    flex-wrap: wrap;
-}
-
-.cm-card {
-    position: relative;
-    width: 350px;
-    height: 360px;
-    border-radius: 16px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.cm-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    filter: grayscale(15%);
-    transition:
-        transform 0.5s cubic-bezier(.4, 0, .2, 1),
-        filter 0.2s ease;
-}
-
-.cm-card:hover .cm-img {
-    transform: scale(1.05);
-    filter: grayscale(0%);
-}
-
-.cm-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top,
-            rgba(0, 0, 0, 0.667) 0%,
-            rgba(0, 0, 0, 0.184) 45%,
-            rgba(0, 0, 0, 0) 100%);
-}
-
-.cm-card:hover .cm-overlay {
-    background: linear-gradient(to top,
-            rgba(0, 0, 0, 0.818) 0%,
-            rgba(0, 0, 0, 0.707) 45%,
-            rgba(0, 0, 0, 0.47) 100%);
-}
-
-.cm-info {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 22px 20px;
-    z-index: 2;
-    transition: all 0.45s cubic-bezier(.4, 0, .2, 1);
-}
-
-.cm-card:hover .cm-info {
-    transform: translateY(-5px);
-}
-
-.cm-name {
-    margin-bottom: 4px;
-    color: var(--color-txt);
-    font-family: var(--font-family-p);
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.cm-role {
-    margin-bottom: 15px;
-    color: var(--color-boton-menu);
-    font-family: var(--font-family-p);
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
-.cm-desc {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 13px;
-    font-family: var(--font-family-p);
-    line-height: 1.6;
-    transition:
-        max-height 0.45s ease,
-        opacity 0.35s ease,
-        margin 0.35s ease;
-}
-
-.cm-card:hover .cm-desc {
-    max-height: 120px;
-    opacity: 1;
-    margin-bottom: 14px;
-}
-
-.cm-social {
-    display: flex;
-    gap: 10px;
-    opacity: 0;
-    transform: translateY(10px);
-    transition:
-        opacity 0.35s ease,
-        transform 0.35s ease;
-}
-
-.cm-card:hover .cm-social {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.cm-social a {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-
-    transition: all 0.25s ease;
-}
-
-.cm-social a i {
-    font-size: 15px;
-}
-
-.cm-social a:hover {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-    transform: translateY(-2px);
-}
-
-.cm-num {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 2;
-
-    padding: 4px 10px;
-    border-radius: 30px;
-
-    background: rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(4px);
-    font-family: var(--font-family-p);
-
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1px;
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
 /* ══════════════════════════════════════
    RESPONSIVE — HAMBURGUESA
 ══════════════════════════════════════ */
@@ -2835,6 +2398,7 @@ INDEX HISTORIA
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    justify-content: center;
     z-index: 1100;
 }
 
@@ -2887,13 +2451,21 @@ INDEX HISTORIA
 .informacionInscrio h1 {
     text-align: center;
     color: var(--color-txt);
+     font-size: var(--font-size-h1);
 }
 
 .informacionInscrio span {
     color: var(--color-boton-menu);
     font-size: var(--font-size-h1);
 }
-
+.insc-left h2 {
+    color: var(--color-boton-menu);
+    font-size: var(--font-size-h2);
+}
+.insc-left .vuelta {
+    color: var(--color-txt);
+    font-size: var(--font-size-h2);
+}
 .informacionInscrio p {
     padding: 35px 0;
     font-family: var(--font-family-p);
@@ -3651,18 +3223,6 @@ footer {
     .cm-grid {
         gap: 20px;
     }
-
-    /* HISTORIA PAGE */
-    .rb-historia-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .rb-proposito-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
     /* CIRCUITOS DETALLE */
     .cr-stats {
         grid-template-columns: repeat(2, 1fr);
@@ -3712,12 +3272,13 @@ footer {
         width: 75%;
         max-width: 320px;
         height: 100vh;
-        background: rgba(5, 3, 3, 0.98);
+        background: #0A0F1C;
         backdrop-filter: blur(20px);
         padding: 90px 30px 40px;
         z-index: 1050;
         transition: right 0.4s cubic-bezier(.4, 0, .2, 1);
         border-left: 0.5px solid rgba(255, 255, 255, 0.08);
+        z-index: 100;
     }
 
     .navMenu.open {
@@ -3745,7 +3306,7 @@ footer {
         position: fixed;
         inset: 0;
         background: rgba(0, 0, 0, 0.6);
-        z-index: 1040;
+        z-index: 10;
     }
 
     .nav-overlay.show {
@@ -4086,32 +3647,6 @@ footer {
         max-width: 420px;
         height: 320px;
     }
-
-    /* HISTORIA PAGE */
-    .rb-historia-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .rb-proposito-inner {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .rb-img-badge {
-        bottom: 0;
-        right: 0;
-    }
-
-    /* HEADER HISTORIA */
-    .container-header-historia h1 {
-        font-size: 2.5rem;
-    }
-
-    .subtitulo-header {
-        font-size: 1.8rem;
-    }
-
     .foot-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -4145,15 +3680,8 @@ footer {
     .p {
         font-size: 14px;
     }
-
-    /*Historia index*/
-    .an-img-wrap {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    .informacionInscrio span{
+        font-size: 28px;
     }
 
     h2 {
@@ -4267,14 +3795,5 @@ footer {
     /* CONTACTO */
     .ct-left h2 {
         font-size: 28px;
-    }
-
-    /* HEADER HISTORIA */
-    .container-header-historia h1 {
-        font-size: 1.8rem;
-    }
-
-    .subtitulo-header {
-        font-size: 1.4rem;
     }
 }
