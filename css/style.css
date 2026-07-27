@@ -33,6 +33,35 @@ p {
     margin: 0 auto;
 }
 
+.botonRegresar {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 12px 16px;
+    border-radius: 25px;
+
+    background-color: var(--color-boton-menu);
+    color: #fff;
+    text-decoration: none;
+
+    font-family: var(--font-family-p);
+    font-size: 14px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+
+    transition: 0.3s ease;
+}
+
+.botonRegresar:hover {
+    transform: translateY(-3px);
+}
+
 :root {
     --first-color: #080C14;
 
@@ -43,7 +72,7 @@ p {
     --font-family-p: "Roboto", sans-serif;
 
     --font-size-h1: 5rem;
-      --font-size-h2: 4rem;
+    --font-size-h2: 4rem;
     --font-size-p: 1.5rem;
     --font-size: 1.5rem;
 
@@ -333,6 +362,7 @@ NOSOTROS
 
 .an-btn {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     gap: 8px;
     background: var(--color-nav);
@@ -344,8 +374,9 @@ NOSOTROS
     padding: 11px 38px;
     border-radius: 8px;
     text-decoration: none;
-    transition: background 0.2s, transform 0.2s;
+    transition: background .2s, transform .2s;
     font-family: var(--font-family-p);
+    text-align: center;
 }
 
 .an-btn:hover {
@@ -2539,7 +2570,7 @@ footer {
 /* ══════════════════════════════════════
   GaLERIA
 ══════════════════════════════════════ */
-.headerGaleria{
+.headerGaleria {
     height: 100vh;
     display: flex;
     justify-content: end;
@@ -2549,6 +2580,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .galeria {
     columns: 4 250px;
     column-gap: 15px;
@@ -2655,7 +2687,7 @@ footer {
     color: #d4af37;
 }
 
-.galeriaSec{
+.galeriaSec {
     background-color: var(--first-color);
     padding: 50px 0;
 }
@@ -2870,6 +2902,7 @@ footer {
     .cm-grid {
         gap: 20px;
     }
+
     /* CIRCUITOS DETALLE */
     .cr-stats {
         grid-template-columns: repeat(2, 1fr);
@@ -3294,6 +3327,7 @@ footer {
         max-width: 420px;
         height: 320px;
     }
+
     .foot-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -3327,7 +3361,8 @@ footer {
     .p {
         font-size: 14px;
     }
-    .informacionInscrio span{
+
+    .informacionInscrio span {
         font-size: 28px;
     }
 
