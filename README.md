@@ -1,14 +1,14 @@
-# 🐺 La Vuelta del Coyote
+#  La Vuelta del Coyote
 
 ### Ciclismo de montaña · Aventura · Los Santos, Costa Rica 🇨🇷
 
 **La Vuelta del Coyote** es un sitio web dedicado a presentar una competencia de ciclismo de montaña en la Zona de Los Santos, Costa Rica. Su objetivo es ofrecer una experiencia digital donde los visitantes puedan conocer los circuitos, explorar los paquetes disponibles, consultar los premios y acceder a la información necesaria para participar en el evento.
 
-🌐 **Sitio web:** [lavueltadelcoyote.vercel.app](https://lavueltadelcoyote.vercel.app/home.html)
+**Sitio web:** [lavueltadelcoyote.vercel.app](https://lavueltadelcoyote.vercel.app/home.html)
 
 ---
 
-## ✨ Características principales
+##  Características principales
 
 - **Página de inicio:** presentación del evento y su propuesta de aventura.
 - **Información del evento:** descripción de la competencia y su organización.
@@ -21,14 +21,14 @@
 - **Contacto:** formulario para consultas y comunicación con los visitantes.
 - **Diseño adaptable:** pensado para facilitar la navegación desde distintos dispositivos.
 
-## 🛠️ Tecnologías
+##  Tecnologías
 
 - **HTML5:** estructura y organización del contenido.
 - **CSS3:** estilos, diseño visual y presentación de los componentes.
 - **JavaScript:** interactividad y funcionalidades dinámicas.
 - **Vercel:** alojamiento y publicación del sitio web.
 
-## 🎯 Objetivos del proyecto
+##  Objetivos del proyecto
 
 - Crear una presencia digital atractiva para un evento deportivo.
 - Organizar la información de circuitos, paquetes y premios.
@@ -36,13 +36,13 @@
 - Mejorar la experiencia de navegación de los visitantes.
 - Aplicar conocimientos de diseño y desarrollo web en un proyecto práctico.
 
-## 🚀 Visualizar el proyecto
+##  Visualizar el proyecto
 
 Podés visitar el sitio web publicado en el siguiente enlace:
 
 **[Abrir La Vuelta del Coyote](https://lavueltadelcoyote.vercel.app/home.html)**
 
-## 👩‍💻 Desarrollo
+##  Desarrollo
 
 Proyecto de desarrollo web enfocado en la presentación digital de un evento de ciclismo de montaña, combinando diseño visual, organización de contenido y funcionalidades interactivas.
 
